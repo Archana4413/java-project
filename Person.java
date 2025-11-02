@@ -28,7 +28,13 @@ public class Person {
     }
     
     public void setAge(int age) {
-        this.age = age;
+        if (age > 0 && age < 100) {
+            this.age = age;
+        }
+    }
+    
+    public boolean isAdult() {
+        return age >= 18;
     }
     
     @Override
