@@ -2,6 +2,9 @@
  * How to run this program:
  * 1. Compile: javac Teacher.java
  * 2. Run: java Teacher
+ * 
+ * Last updated: December 2024
+ * Contributor: Dhruvi
  */
 public class Teacher extends Person {
     private String subject;

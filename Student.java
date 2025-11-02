@@ -2,6 +2,9 @@
  * How to run this program:
  * 1. Compile: javac Student.java
  * 2. Run: java Student
+ * 
+ * Last updated: December 2024
+ * Contributor: Dhruvi
  */
 public class Student extends Person {
     private String studentID;
