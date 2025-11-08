@@ -4,8 +4,17 @@
  * Last edited: November 2025
  * 
  * HOW TO RUN:
- * 1. Compile: javac Person.java Student.java Teacher.java CustomException.java DataValidator.java StudentData.java Main.java
- * 2. Run: java Main
+ * Windows PowerShell:
+ *   cd basic-classes-data
+ *   javac *.java
+ *   java Main
+ * 
+ * Alternative (one line):
+ *   javac *.java; java Main
+ * 
+ * Linux/Mac Terminal:
+ *   cd basic-classes-data
+ *   javac *.java && java Main
  * 
  * This program demonstrates:
  * - Classes and Inheritance (Person -> Student/Teacher)
