@@ -1,3 +1,8 @@
+/*
+ * CustomException Class - Simple custom exception
+ * Author: Dhruvi
+ * Last edited: November 2025
+ */
 import java.time.LocalDateTime;
 
 public class CustomException extends Exception {
