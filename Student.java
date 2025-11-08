@@ -1,41 +1,35 @@
-/**
- * Student class - Extends Person class
- * Demonstrates inheritance concept by adding student-specific attributes
+/*
+ * Student Class - Extends Person, adds student ID and marks
+ * Author: Dhruvi
+ * Last edited: November 2025
  */
 public class Student extends Person {
     private String studentId;
     private double marks;
     
-    // Constructor using super() to call parent constructor
-    public Student(String name, int age, String studentId, double marks) {
-        super(name, age);  // Call parent constructor
+    public Student(String name, int age, String studentId, double marks) throws CustomException {
+        super(name, age);
+        if (age < 18 || age > 21) {
+            throw new CustomException("Student age must be between 18-21 years");
+        }
         this.studentId = studentId;
         this.marks = marks;
     }
     
-    // Getter method for student ID
     public String getStudentId() {
         return studentId;
     }
     
-    // Setter method for student ID
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-    
-    // Getter method for marks
     public double getMarks() {
         return marks;
     }
     
-    // Setter method for marks
-    public void setMarks(double marks) {
-        this.marks = marks;
+    public String getStatus() {
+        return marks >= 50 ? "Pass" : "Fail";
     }
     
-    // Override toString method to include student-specific information
     @Override
     public String toString() {
-        return super.toString() + ", Student ID: " + studentId + ", Marks: " + marks;
+        return super.toString() + ", ID: " + studentId + ", Marks: " + marks + ", Status: " + getStatus();
     }
 }
