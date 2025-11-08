@@ -1,3 +1,8 @@
+/*
+ * Person Class - Base class for all persons
+ * Author: Dhruvi
+ * Last edited: November 2025
+ */
 public class Person {
     protected String name;
     protected int age;
